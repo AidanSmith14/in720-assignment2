@@ -161,7 +161,7 @@ public class AWSAPIEC2App {
 	{
 		//Creates an instance with given imageId and type and ensures only one is created
 		RunInstancesRequest runInstanceRequest = new RunInstancesRequest();
-		runInstanceRequest.withImageId("ami-31490d51").withInstanceType("t2.micro").withMinCount(1).withMaxCount(1);
+		runInstanceRequest.withImageId("ami-31490d51").withInstanceType("t2.nano").withMinCount(1).withMaxCount(1);
 		RunInstancesResult runInstancesResult = ec2.runInstances(runInstanceRequest);
 		
 		//Receives id of newly created instance 	
